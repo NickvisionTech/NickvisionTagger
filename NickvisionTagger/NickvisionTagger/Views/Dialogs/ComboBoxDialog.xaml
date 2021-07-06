@@ -1,0 +1,15 @@
+﻿<ContentDialog
+    x:Class="NickvisionTagger.Views.Dialogs.ComboBoxDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NickvisionTagger.Views.Dialogs"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:wct="using:CommunityToolkit.WinUI.UI.Controls"
+    mc:Ignorable="d" CloseButtonText="Cancel" PrimaryButtonText="OK" DefaultButton="Close">
+    <wct:DockPanel>
+        <TextBlock Name="LblDescription" wct:DockPanel.Dock="Top"/>
+
+        <ComboBox Name="CmbBox" wct:DockPanel.Dock="Bottom" Margin="0,10,0,0" Width="300" PlaceholderText="Select option here"/>
+    </wct:DockPanel>
+</ContentDialog>
